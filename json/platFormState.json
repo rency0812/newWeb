@@ -1,0 +1,13 @@
+{
+  "code": 1,
+  "detail": {
+    "platformName": "依迅前端框架使用规范3.3",
+    "platformId": "1",
+    "platformTheme": "blue",
+    "platformLogo": "/assets/img/exhibition_logo.png",
+    "platformSplash": "/assets/img/login_bg_01.jpg",
+    "platformSideMenu": true,
+    "platformCopyright": "<p>技术支持：武汉依迅北斗空间技术有限公司 &nbsp;&nbsp;&nbsp;&nbsp; 服务热线：87773501</p><p>Copyright©2015-2019 增值电信业务许可证号：B2-20150538 备案号:鄂ICP备10014997号-1</p>"
+  },
+  "msg": "获取成功"
+}

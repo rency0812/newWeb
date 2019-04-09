@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        audio::-webkit-media-controls-panel, video::-webkit-media-controls-panel {
+            background-color: #000;
+        }
+
+        audio::-webkit-media-controls-fullscreen-button, video::-webkit-media-controls-fullscreen-button{
+            display: block !important;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<video id="videoElement" style="width: 800px; height: 450px; background-color: #000;"></video>
+
+<p>
+
+    <button onclick="load()">加载</button>
+
+    <button onclick="play()">播放</button>
+
+    <button onclick="pause()">暂停</button>
+
+    <button onclick="destroy()">销毁</button>
+</p>
+
+
+<script src="flv.js"></script>
+
+<script>
+
+    var videoElement = document.getElementById('videoElement');
+    if (flvjs.isSupported()) {
+
+        var flvPlayer = flvjs.createPlayer({
+            type: 'flv',
+            isLive: true,
+            withCredentials: false,
+            hasAudio: true,
+            hasVideo: true,
+            url: 'ws://36.111.196.84:1078/mediawebsocket/1_015823232222_1.flv',  //'http://192.168.1.195:7100/aac2.flv'
+        },
+            {
+                enableWorker: false,
+                enableStashBuffer: false,
+                stashInitialSize: 1,
+                lazyLoad: false,
+                lazyLoadMaxDuration: 1,
+                lazyLoadRecoverDuration: 1,
+                deferLoadAfterSourceOpen: false,
+                autoCleanupMaxBackwardDuration: 1,
+                autoCleanupMinBackwardDuration: 1,
+                statisticsInfoReportInterval: 1,
+                fixAudioTimestampGap: true,
+
+            });
+
+
+
+
+        // flvPlayer.load();
+
+    }
+
+    function load() {
+        flvPlayer.attachMediaElement(videoElement);
+        console.log('load')
+        flvPlayer.load();
+        flvPlayer.play();
+    }
+
+    function play() {
+        console.log('play')
+        flvPlayer.play();
+    }
+
+    function pause() {
+        console.log('pause')
+        flvPlayer.pause();
+    }
+
+    function destroy() {
+        console.log('destroy')
+        flvPlayer.destroy();
+    }
+
+
+</script>
+</body>
+</html>

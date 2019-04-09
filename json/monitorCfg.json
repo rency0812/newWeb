@@ -1,0 +1,37 @@
+{
+  "pageCfg": {
+    "pIcon": "md-settings",
+    "pTitle": "平台监控",
+    "cTitle": "车辆监控",
+    "tabRight": "right",
+    "menuId": 94,
+    "grid": null,
+    "searchPanel": null,
+    "gridButton": null,
+    "searchButton": null,
+    "pageTree": null,
+    "monitorButton": [
+      {
+        "id": 0,
+        "label": "组织架构",
+        "icon": "md-git-merge",
+        "name": "structureVechile",
+        "api": "../"
+      },
+      {
+        "id": 1,
+        "label": "车辆列表",
+        "icon": "md-car",
+        "name": "vechileLists",
+        "api": "../"
+      },
+      {
+        "id": 2,
+        "label": "关注车辆",
+        "icon": "md-star",
+        "name": "vechileLists",
+        "api": "../"
+      }
+    ]
+  }
+}

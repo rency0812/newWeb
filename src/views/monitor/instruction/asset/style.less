@@ -1,0 +1,66 @@
+.instruction-modal {
+  // loading 按钮
+  .ivu-icon-ios-loading:before {
+    content: "\F45B";
+  }
+
+  .ivu-modal-content {
+    background-clip: padding-box;
+    box-shadow: 0 4px 12px rgba(0,0,0,.15);
+  }
+
+  // 全屏的类
+  .ivu-modal-fullscreen {
+    width: 100%!important;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+  }
+
+  // table 的checkbox
+  .ivu-checkbox-wrapper {
+    margin-right: 0;
+  }
+
+  // 修复 input
+  .ivu-input-prefix i,
+  .ivu-input-suffix i {
+    font-size: 16px;
+    line-height: 32px;
+    color: #808695;
+  }
+  .ivu-input-with-prefix {
+    padding-left: 32px;
+  }
+
+  // 等高列
+  .equal-height-cols {
+    display: flex;
+    align-items: stretch;
+    .ivu-row, .ivu-col {
+      height: auto;
+    }
+  }
+
+  // 修复 ghost 按钮
+  .ivu-btn-ghost {
+    color: #fff;
+    background: 0 0;
+
+    &.ivu-btn-error {
+      color: #ed4014;
+    }
+
+    &.ivu-btn-error:hover {
+      color: #f16643;
+      background: hsla(11,85%,97%,.5);
+    }
+  }
+
+  // 错误提示
+  .ivu-form-item-error-tip {
+    margin-top: 0.25em;
+    line-height: 1.2;
+  }
+
+}

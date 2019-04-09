@@ -1,0 +1,20 @@
+{
+  "code": 1,
+  "detail": {
+    "id": 513,
+    "account": "sjccexsun",
+    "name": "超级管理员",
+    "sex": 1,
+    "email": null,
+    "token": "78A5B5FE6AA64489852C6863CB56430A",
+    "userGuid": "78A5B5FE6AA64489852C6863CB56430A",
+    "spell": null,
+    "deptId": 709,
+    "deptName": "中国",
+    "roleName": "演示",
+    "roleId": 5,
+    "phone": null,
+    "isAdmin": 1
+  },
+  "msg": "登录成功"
+}

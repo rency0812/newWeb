@@ -1,0 +1,62 @@
+@message-prefix-cls: ~"@{css-prefix}message";
+@icon-prefix-cls: ~"@{css-prefix}icon";
+
+.@{message-prefix-cls} {
+  font-size: @font-size-small;
+  position: fixed;
+  z-index: @zindex-message;
+  width: 100%;
+  top: 16px;
+  left: 0;
+
+  &-notice {
+    width: auto;
+    vertical-align: middle;
+    position: absolute;
+    right: 0;
+  }
+
+  &-notice-content {
+    position: relative;
+    right: 15px;
+    //border: 1px solid @border-color-split;
+    border-radius: 5px;
+    box-shadow: @shadow-base;
+    background: #fff;
+    display: block;
+    overflow: hidden;
+
+  }
+
+  &-success .@{icon-prefix-cls} {
+    color: @success-color;
+  }
+
+  &-error .@{icon-prefix-cls} {
+    color: #fff;
+  }
+
+  &-warning .@{icon-prefix-cls} {
+    color: @warning-color;
+  }
+
+  &-info .@{icon-prefix-cls},
+  &-loading .@{icon-prefix-cls} {
+    color: @primary-color;
+  }
+
+  .@{icon-prefix-cls} {
+    margin-right: 8px;
+    font-size: 14px;
+    top: 1px;
+    position: relative;
+  }
+}
+
+.ivu-message-error {
+  width: 100%;
+  height: 100%;
+  padding: 8px 16px;
+  background-color: #f30;
+  color: #fff;
+}

@@ -1,0 +1,241 @@
+.@{row-prefix-cls} {
+  .make-row();
+  display: block;
+
+  &-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    &:before,
+    &:after {
+      display: flex;
+    }
+
+    // x轴原点
+    &-start {
+      justify-content: flex-start;
+    }
+
+    // x轴居中
+    &-center {
+      justify-content: center;
+    }
+
+    // x轴反方向
+    &-end {
+      justify-content: flex-end;
+    }
+
+    // x轴平分
+    &-space-between {
+      justify-content: space-between;
+    }
+
+    // x轴有间隔地平分
+    &-space-around {
+      justify-content: space-around;
+    }
+
+    // 顶部对齐
+    &-top {
+      align-items: flex-start;
+    }
+
+    // 居中对齐
+    &-middle {
+      align-items: center;
+    }
+
+    // 底部对齐
+    &-bottom {
+      align-items: flex-end;
+    }
+  }
+;
+}
+
+.@{col-prefix-cls} {
+  position: relative;
+  display: block;
+}
+
+.make-grid();
+
+// Extra small grid
+//
+// Columns, offsets, pushes, and pulls for extra small devices like
+// smartphones.
+
+.make-grid(-xs);
+
+// Small grid
+//
+// Columns, offsets, pushes, and pulls for the small device range, from phones
+// to tablets.
+
+@media (min-width: @screen-sm-min) {
+  .make-grid(-sm);
+}
+
+// Medium grid
+//
+// Columns, offsets, pushes, and pulls for the desktop device range.
+
+@media (min-width: @screen-md-min) {
+  .make-grid(-md);
+}
+
+// Large grid
+//
+// Columns, offsets, pushes, and pulls for the large desktop device range.
+
+@media (min-width: @screen-lg-min) {
+  .make-grid(-lg);
+}
+
+.ivu-split-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%
+}
+
+.ivu-split-pane {
+  position: absolute;
+  overflow: hidden;
+}
+
+.ivu-split-pane.left-pane, .ivu-split-pane.right-pane {
+  top: 0;
+  bottom: 0
+}
+
+.ivu-split-pane.left-pane {
+  left: 0
+}
+
+.ivu-split-pane.right-pane {
+  right: 0
+}
+
+.ivu-split-pane.bottom-pane, .ivu-split-pane.top-pane {
+  left: 0;
+  right: 0
+}
+
+.ivu-split-pane.top-pane {
+  top: 0
+}
+
+.ivu-split-pane.bottom-pane {
+  bottom: 0
+}
+
+.ivu-split-pane-moving {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none
+}
+
+.ivu-split-trigger {
+  border: 1px solid #dcdee2
+}
+
+.ivu-split-trigger-con {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 10
+}
+
+.ivu-split-trigger-bar-con {
+  position: absolute;
+  overflow: hidden
+}
+
+.ivu-split-trigger-bar-con.vertical {
+  left: 1px;
+  top: 50%;
+  height: 32px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%)
+}
+
+.ivu-split-trigger-bar-con.horizontal {
+  left: 50%;
+  top: 1px;
+  width: 32px;
+  -webkit-transform: translate(-50%);
+  transform: translate(-50%)
+}
+
+.ivu-split-trigger-vertical {
+  width: 6px;
+  height: 100%;
+  background: #dcdcdc;
+  border-top: none;
+  border-bottom: none;
+  cursor: col-resize
+}
+
+.ivu-split-trigger-vertical .ivu-split-trigger-bar {
+  width: 4px;
+  height: 1px;
+  background: rgba(23, 35, 61, .25);
+  float: left;
+  margin-top: 3px
+}
+
+.ivu-split-trigger-horizontal {
+  height: 6px;
+  width: 100%;
+  background: #f8f8f9;
+  border-left: none;
+  border-right: none;
+  cursor: row-resize
+}
+
+.ivu-split-trigger-horizontal .ivu-split-trigger-bar {
+  height: 4px;
+  width: 1px;
+  background: rgba(23, 35, 61, .25);
+  float: left;
+  margin-right: 3px
+}
+
+.ivu-split-horizontal .ivu-split-trigger-con {
+  top: 50%;
+  height: 100%;
+  width: 0
+}
+
+.ivu-split-vertical .ivu-split-trigger-con {
+  left: 50%;
+  height: 0;
+  width: 100%
+}
+
+.ivu-split .no-select {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none
+}
+
+
+.ivu-input-prefix, .ivu-input-suffix {
+  width: 32px;
+  height: 100%;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.ivu-input-suffix {
+  left: auto;
+  right: 0;
+}

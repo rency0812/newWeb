@@ -1,0 +1,186 @@
+.ec-switch {
+    display: inline-block;
+    direction: ltr;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid;
+    border-color: #e6e6e6;
+    position: relative;
+    text-align: left;
+    overflow: hidden;
+    line-height: 8px;
+    z-index: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    vertical-align: middle;
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s
+}
+
+.ec-switch .ec-switch-container {
+    display: inline-block;
+    top: 0;
+    border-radius: 1px;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)
+}
+
+.ec-switch .ec-switch-handle-on,
+.ec-switch .ec-switch-handle-off,
+.ec-switch .ec-switch-label {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block!important;
+    height: 100%;
+    padding: .625em .875em;
+    font-size: 1.6rem;
+    line-height: 1.2;
+    border-radius:5px
+}
+
+.ec-switch .ec-switch-handle-on,
+.ec-switch .ec-switch-handle-off {
+    text-align: center;
+    z-index: 1
+}
+
+.ec-switch .ec-switch-handle-on.ec-switch-primary,
+.ec-switch .ec-switch-handle-off.ec-switch-primary {
+    color: #fff;
+    background: #0e90d2
+}
+
+.ec-switch .ec-switch-handle-on.ec-switch-secondary,
+.ec-switch .ec-switch-handle-off.ec-switch-secondary {
+    color: #fff;
+    background: #3bb4f2
+}
+
+.ec-switch .ec-switch-handle-on.ec-switch-success,
+.ec-switch .ec-switch-handle-off.ec-switch-success {
+    color: #fff;
+    background: #5eb95e
+}
+
+.ec-switch .ec-switch-handle-on.ec-switch-warning,
+.ec-switch .ec-switch-handle-off.ec-switch-warning {
+    background: #f37b1d;
+    color: #fff
+}
+
+.ec-switch .ec-switch-handle-on.ec-switch-danger,
+.ec-switch .ec-switch-handle-off.ec-switch-danger {
+    color: #fff;
+    background: #dd514c
+}
+
+.ec-switch .ec-switch-handle-on.ec-switch-default,
+.ec-switch .ec-switch-handle-off.ec-switch-default {
+    color: #000;
+    background: #eee
+}
+
+.ec-switch .ec-switch-label {
+    text-align: center;
+    margin-top: -1px;
+    margin-bottom: -1px;
+    z-index: 100;
+    color: #444;
+    background: #fff
+}
+
+.ec-switch .ec-switch-handle-on {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0
+}
+
+.ec-switch .ec-switch-handle-off {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0
+}
+
+.ec-switch input[type='radio'],
+.ec-switch input[type='checkbox'] {
+    position: absolute!important;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -1
+}
+
+.ec-switch input[type='radio'].form-control,
+.ec-switch input[type='checkbox'].form-control {
+    height: auto
+}
+
+.ec-switch.ec-switch-xs .ec-switch-handle-on,
+.ec-switch.ec-switch-xs .ec-switch-handle-off,
+.ec-switch.ec-switch-xs .ec-switch-label {
+    font-size: 1.2rem
+}
+
+.ec-switch.ec-switch-sm .ec-switch-handle-on,
+.ec-switch.ec-switch-sm .ec-switch-handle-off,
+.ec-switch.ec-switch-sm .ec-switch-label {
+    font-size: 1.4rem
+}
+
+.ec-switch.ec-switch-lg .ec-switch-handle-on,
+.ec-switch.ec-switch-lg .ec-switch-handle-off,
+.ec-switch.ec-switch-lg .ec-switch-label {
+    font-size: 1.8rem
+}
+
+.ec-switch.ec-switch-disabled,
+.ec-switch.ec-switch-readonly,
+.ec-switch.ec-switch-indeterminate {
+    cursor: default!important
+}
+
+.ec-switch.ec-switch-disabled .ec-switch-handle-on,
+.ec-switch.ec-switch-readonly .ec-switch-handle-on,
+.ec-switch.ec-switch-indeterminate .ec-switch-handle-on,
+.ec-switch.ec-switch-disabled .ec-switch-handle-off,
+.ec-switch.ec-switch-readonly .ec-switch-handle-off,
+.ec-switch.ec-switch-indeterminate .ec-switch-handle-off,
+.ec-switch.ec-switch-disabled .ec-switch-label,
+.ec-switch.ec-switch-readonly .ec-switch-label,
+.ec-switch.ec-switch-indeterminate .ec-switch-label {
+    opacity: .5;
+    cursor: default!important
+}
+
+.ec-switch.ec-switch-animate .ec-switch-container {
+    -webkit-transition: margin-left .5s;
+    transition: margin-left .5s
+}
+
+.ec-switch.ec-switch-inverse .ec-switch-handle-on,
+.ec-switch.ec-switch-inverse .ec-switch-handle-off {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0
+}
+
+.ec-switch.ec-switch-focused {
+    border-color: #3bb4f2;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(59, 180, 242, .6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(59, 180, 242, .6)
+}
+
+.ec-switch.ec-switch-on .ec-switch-label,
+.ec-switch.ec-switch-inverse.ec-switch-off .ec-switch-label {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0
+}
+
+.ec-switch.ec-switch-off .ec-switch-label,
+.ec-switch.ec-switch-inverse.ec-switch-on .ec-switch-label {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0
+}

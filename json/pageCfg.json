@@ -1,0 +1,164 @@
+[
+  {
+    "menuId": 20,
+    "cfg": {
+      "grid": [
+        {
+          "id": 19,
+          "roleId": 0,
+          "colId": 17,
+          "title": "创建时间",
+          "sortId": 0,
+          "align": "center",
+          "width": null,
+          "key": "createTime"
+        },
+        {
+          "id": 18,
+          "roleId": 0,
+          "colId": 16,
+          "title": "创建人",
+          "sortId": 0,
+          "align": "center",
+          "width": null,
+          "key": "createUser"
+        },
+        {
+          "id": 17,
+          "roleId": 0,
+          "colId": 15,
+          "title": "菜单路径",
+          "sortId": 0,
+          "align": "center",
+          "width": null,
+          "key": "menuUrl"
+        },
+        {
+          "id": 16,
+          "roleId": 0,
+          "colId": 14,
+          "title": "上级节点",
+          "sortId": 0,
+          "align": "center",
+          "width": null,
+          "key": "pMenuName"
+        },
+        {
+          "id": 15,
+          "roleId": 0,
+          "colId": 13,
+          "title": "排序",
+          "sortId": 0,
+          "align": "center",
+          "width": null,
+          "key": "sortId"
+        },
+        {
+          "id": 14,
+          "roleId": 0,
+          "colId": 12,
+          "title": "菜单类型",
+          "sortId": 0,
+          "align": "center",
+          "width": null,
+          "key": "menuTypeName"
+        },
+        {
+          "id": 13,
+          "roleId": 0,
+          "colId": 11,
+          "title": "菜单名称",
+          "sortId": 0,
+          "align": "center",
+          "width": null,
+          "key": "menuName"
+        }
+      ],
+      "searchPanel": [
+        {
+          "id": 16,
+          "menuId": 20,
+          "label": "菜单名称",
+          "type": "input",
+          "name": "menuName",
+          "value": null,
+          "dicType": null
+        },
+        {
+          "id": 17,
+          "menuId": 20,
+          "label": "类型",
+          "type": "select-remote",
+          "name": "menuType",
+          "value": null,
+          "dicType": 1
+        },
+        {
+          "id": 18,
+          "menuId": 20,
+          "label": "创建时间",
+          "type": "daterange",
+          "name": "createTime",
+          "value": null,
+          "dicType": null
+        }
+      ],
+      "gridButton": [
+        {
+          "id": 33,
+          "name": "deleteMenu",
+          "api": "/table/menuManage/delete"
+        },
+        {
+          "id": 34,
+          "name": "updateMenu",
+          "api": "/table/menuManage/update"
+        }
+      ],
+      "searchButton": [
+        {
+          "id": 30,
+          "name": "query",
+          "api": "/table/menuManage/queryPage"
+        },
+        {
+          "id": 32,
+          "name": "insertMenu",
+          "api": "/table/menuManage/save"
+        },
+        {
+          "id": 33,
+          "name": "deleteMenu",
+          "api": "/table/menuManage/delete"
+        }
+      ],
+      "pageTree": [
+        {
+          "id": 11,
+          "treeName": null,
+          "menuId": 20,
+          "treeValue": "menuTree",
+          "treeType": "0"
+        }
+      ]
+    },
+    "searchButton": [
+      {
+        "id": 30,
+        "name": "query",
+        "api": "/table/menuManage/queryPage"
+      },
+      {
+        "id": 32,
+        "name": "insertMenu",
+        "api": "/table/menuManage/save"
+      },
+      {
+        "id": 33,
+        "name": "deleteMenu",
+        "api": "/table/menuManage/delete"
+      }
+    ],
+    "queryApi": "/table/menuManage/queryPage"
+  }
+]

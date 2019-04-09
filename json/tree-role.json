@@ -1,0 +1,75 @@
+[
+  {
+    "id": 1,
+    "text": "全部规则",
+    "pid": null,
+    "opened": true,
+    "data": {
+      "mapType": null
+    },
+    "children": [
+      {
+        "id": 2,
+        "text": "线路偏移",
+        "pid": 1,
+        "opened": false,
+        "data": {
+          "mapType": 4
+        },
+        "children": null,
+        "selected": false,
+        "icon": "tree-node tree-icon Department"
+      },
+      {
+        "id": 3,
+        "text": "禁入规则",
+        "pid": 1,
+        "opened": false,
+        "data": {
+          "mapType": 1
+        },
+        "children": null,
+        "selected": false,
+        "icon": "tree-node tree-icon Department"
+      },
+      {
+        "id": 4,
+        "text": "禁出规则",
+        "pid": 1,
+        "opened": false,
+        "data": {
+          "mapType": 1
+        },
+        "children": null,
+        "selected": false,
+        "icon": "tree-node tree-icon Department"
+      },
+      {
+        "id": 5,
+        "text": "超速规则",
+        "pid": 1,
+        "opened": false,
+        "data": {
+          "mapType": 1
+        },
+        "children": null,
+        "selected": false,
+        "icon": "tree-node tree-icon Department"
+      },
+      {
+        "id": 6,
+        "text": "路段限速",
+        "pid": 1,
+        "opened": false,
+        "data": {
+          "mapType": 4
+        },
+        "children": null,
+        "selected": false,
+        "icon": "tree-node tree-icon Department"
+      }
+    ],
+    "selected": false,
+    "icon": "tree-node tree-icon Department"
+  }
+]

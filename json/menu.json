@@ -1,0 +1,160 @@
+{
+  "code": 1,
+  "detail": [
+    {
+      "id": 1,
+      "text": "页面布局示例",
+      "pid": null,
+      "opened": true,
+      "data": {
+        "url": "/index",
+        "iconClass": null,
+        "target": null,
+        "icon": "/assets/img/state_signal.png"
+      },
+      "children": [
+        {
+          "id": 12,
+          "text": "登录布局示例",
+          "pid": 1,
+          "opened": false,
+          "data": {
+            "url": "/pages/login",
+            "iconClass": null,
+            "target": null,
+            "icon": "/assets/img/state_signal.png"
+          },
+          "children": null,
+          "selected": false,
+          "icon": "tree-node tree-icon Department"
+        },
+        {
+          "id": 13,
+          "text": "框架布局示例",
+          "pid": 1,
+          "opened": false,
+          "data": {
+            "url": "/pages/layout",
+            "iconClass": null,
+            "target": null,
+            "icon": "/assets/img/state_signal.png"
+          },
+          "children": null,
+          "selected": false,
+          "icon": "tree-node tree-icon Department"
+        },
+        {
+          "id": 14,
+          "text": "报表页面布局",
+          "pid": 1,
+          "opened": false,
+          "data": {
+            "url": "/pages/grid",
+            "iconClass": null,
+            "target": null,
+            "icon": "/assets/img/state_signal.png"
+          },
+          "children": null,
+          "selected": false,
+          "icon": "tree-node tree-icon Department"
+        },
+        {
+          "id": 15,
+          "text": "特殊页面布局",
+          "pid": 1,
+          "opened": false,
+          "data": {
+            "url": "/pages/overview",
+            "iconClass": null,
+            "target": null,
+            "icon": "/assets/img/state_signal.png"
+          },
+          "children": null,
+          "selected": false,
+          "icon": "tree-node tree-icon Department"
+        }
+      ],
+      "selected": false,
+      "icon": "tree-node tree-icon Department"
+    },
+    {
+      "id": 2,
+      "text": "框架组件示例",
+      "pid": null,
+      "opened": true,
+      "data": {
+        "url": "/pages/components",
+        "iconClass": null,
+        "target": null,
+        "icon": "/assets/img/state_signal.png"
+      },
+      "children": [
+        {
+          "id": 21,
+          "text": "表单组件示例",
+          "pid": 1,
+          "opened": false,
+          "data": {
+            "url": "/pages/components/grid",
+            "iconClass": null,
+            "target": null,
+            "icon": "/assets/img/state_signal.png"
+          },
+          "children": [
+            {
+              "id": 211,
+              "text": "登录框",
+              "pid": 21,
+              "opened": false,
+              "data": {
+                "url": "/pages/components/window/loginbox",
+                "iconClass": null,
+                "target": null,
+                "icon": "/assets/img/state_signal.png"
+              },
+              "children": null,
+              "selected": false,
+              "icon": "tree-node tree-icon Department"
+            }
+          ],
+          "selected": false,
+          "icon": "tree-node tree-icon Department"
+        },
+        {
+          "id": 22,
+          "text": "通用组件示例",
+          "pid": 1,
+          "opened": false,
+          "data": {
+            "url": "/pages/components/common",
+            "iconClass": null,
+            "target": null,
+            "icon": "/assets/img/state_signal.png"
+          },
+          "children": [
+            {
+              "id": 211,
+              "text": "全屏按钮",
+              "pid": 21,
+              "opened": false,
+              "data": {
+                "url": "/pages/components/common/handleScreen",
+                "iconClass": null,
+                "target": null,
+                "icon": "/assets/img/state_signal.png"
+              },
+              "children": null,
+              "selected": false,
+              "icon": "tree-node tree-icon Department"
+            }
+          ],
+          "selected": false,
+          "icon": "tree-node tree-icon Department"
+        }
+      ],
+      "selected": false,
+      "icon": "tree-node tree-icon Department"
+    }
+  ],
+  "msg": "加载菜单成功"
+}

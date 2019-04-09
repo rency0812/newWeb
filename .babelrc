@@ -1,0 +1,16 @@
+{
+  "presets": [
+    ["es2015", {
+      "modules": false
+    }],
+    ["env", {
+      "modules": false,
+      "targets": {
+        "browsers": ["ie >=9"]
+      },
+      "useBuiltIns": true,
+      "debug": true
+    }]
+  ],
+  "plugins": ["transform-object-rest-spread"]
+}
