@@ -4,13 +4,6 @@
 
 编写此文档的目的是为了更好理解这个项目的结构。
 
-## 2. 编撰
-
-吴钦飞（wuqinfei@qq.com）
-
-## 3. 代码风格
-
-* JavaScript：采用 [Aribnb JavaScript Code Style](https://github.com/airbnb/javascript)
 
 ## 4. 项目结构
 
